@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
     // * tenta remover de uma posicao invalida
     lista.remove(6); // * Tenta remover em uma posicao invalida
     //! ele deve apenas nao fazer nada
-    cout << lista.tamanho(); // * Mostra a nova lista
+    lista.print(); // * Mostra a nova lista
     
     return 0;
 }
