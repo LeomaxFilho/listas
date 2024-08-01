@@ -20,8 +20,8 @@ public:
     bool vazia();
     bool cheia();
     int tamanho();
-    int value(int pos); // * retorna o valor do indice(pos)
-    int posicao(int value); // * retorna a posicao em que se encontra o valor(value)
+    int value(int pos); // * retorna o valor do indice(pos), pos !(deve ser a posicao no array de 0-tam_max)
+    int posicao(int value); // * retorna o indice em que se encontra o valor(value)
     bool insere_fim(int val);   // * insere o valor(val) no final da lista
     bool insere(int val, int pos); // * insere o valor(val) na posicao(pos)
     bool remove(int pos);

@@ -39,14 +39,14 @@ bool Lista::insere_fim(int val){
 
     if (cheia())
         return false;
-    valor[tam_atual+1] = val;
+    valor[tam_atual] = val;
     tam_atual++;
     return true;
 }
 
 bool Lista::insere(int val, int pos){
 
-    if (cheia() || pos > tam_atual+1 || pos > tam_max || pos < 0)
+    if (cheia() || pos > tam_atual || pos > tam_max-1 || pos < 0)
         return false;
     
     int i = tam_atual;
