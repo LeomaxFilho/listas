@@ -1,6 +1,6 @@
 all: Lista.o
 	@echo 'Criando o "Lista.o"...'
-	@ g++ Lista.o main.cpp -o lista_encadeada.out
+	@ g++ Lista.o main.cpp -o lista_sequencial.out
 
 Lista.o:
 	@echo 'Compilando...'
@@ -12,4 +12,4 @@ clean:
 
 run:
 	@echo 'Rodando exemplo:'
-	@ ./lista_encadeada.out
+	@ ./lista_sequencial.out
