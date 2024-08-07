@@ -1,4 +1,13 @@
 # Listas
+
+<details><summary> <strong>Sumário</strong></summary>
+
+* [Lista Sequencial](https://github.com/LeomaxFilho/listas?tab=readme-ov-file#lista-sequencial)
+
+* [Lista Encadeada](https://github.com/LeomaxFilho/listas?tab=readme-ov-file#lista-encadeada)
+</details>
+
+
 ## Lista Sequencial
 ### Algoritimo
   Para a implementação de uma lista sequencial se utiliza do array de C, para uma implementação mais completa se adiciona métodos para adicionar e remover valores
