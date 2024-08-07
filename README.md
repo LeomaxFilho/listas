@@ -17,11 +17,11 @@
 
   #### A imagem mostra o processo do algoritimo de inserção:
 
-![Imagem3](/Lista_seq/Adicionar_how.png)
+![Imagem3](/Lista_enc/Adicionar_how.png)
 
 #### A imagem mostra o processo do algoritimo de remoção:
 
-![Imagem4](/Lista_seq/Remover_how.png)
+![Imagem4](/Lista_enc/Remover_how.png)
   
 ### Compile and Run
 Requires [make](https://www.gnu.org/software/make/)
