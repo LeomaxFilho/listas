@@ -43,9 +43,9 @@ bool Lista_enc::insereMeioLista(int pos, int val){
     novono->setprox(nullptr); // * seleciona como ponteiro que aponta para null
 
     No* aux = inicio;
-    int i = 0;
+    int i = 1;
 
-    while ((i < pos-1) && (aux != nullptr)) // * itera pela lista ate o indice desejado comecando de 0
+    while ((i < pos) && (aux != nullptr)) // * itera pela lista ate o indice desejado comecando de 0
     {
         aux = aux->getprox();
         i++;

@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
     Lista_enc lista;
 
     // * tenta remover de uma lista vazia
-    lista.remove(1);
+    lista.remove(0);
 
     // * povoa a lista
     for (int i = 0; i < count; i++)
