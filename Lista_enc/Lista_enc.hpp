@@ -21,7 +21,7 @@ public:
     bool insereInicioLista(int val);
     bool insereFimLista(int val);
     bool insereMeioLista(int pos, int dado);
-    bool insereOrdem(int val);
+    bool insereOrdem(int val); // * serve apenas caso a lista esteja previamente em ordem
     // * remove
     bool remove(int pos);
     int removeInicioLista();
