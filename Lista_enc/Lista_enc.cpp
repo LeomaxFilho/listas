@@ -135,7 +135,50 @@ void Lista_enc::print(){
         aux = aux->getprox(); // * passa para o proximo indice
     }
     cout << aux->getval() << "} \n";
-  
-        
+}
+
+bool Lista_enc::insereOrdem(int val){
     
+    int i = 1;
+    No* novo = (No*)malloc(sizeof(No)); // ja lanca prox == nullptr
+    novo->setval(val);
+
+    No* atual;
+    No* anterior;
+    atual = inicio;
+
+    while (atual != nullptr)
+    {
+
+        if (i == 0)
+        {
+            if (atual->getval() > val)
+            {
+                inicio = novo;
+                novo->setprox(atual);
+                tamanho++;
+                return true;
+            }
+            
+        } else if ((i > 0) && (i < tamanho))
+        {
+            if (atual->getval() > val)
+            {
+                anterior->setprox(novo);
+                novo->setprox(atual);
+                tamanho++;
+                return true;
+            }
+        }else if (i >= tamanho)
+        {
+            atual->setprox(novo);
+            tamanho++;
+            return true;
+        }
+        
+        i++; 
+        anterior = atual;
+        atual = atual->getprox();
+    }
+    return false;
 }
