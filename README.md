@@ -5,6 +5,8 @@
 * [Lista Sequencial](https://github.com/LeomaxFilho/listas?tab=readme-ov-file#lista-sequencial)
 
 * [Lista Encadeada](https://github.com/LeomaxFilho/listas?tab=readme-ov-file#lista-encadeada)
+* 
+* [Fila Encadeada](https://github.com/LeomaxFilho/listas#fila-sequencial)
 </details>
 
 
