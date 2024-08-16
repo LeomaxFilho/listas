@@ -31,7 +31,15 @@
 #### A imagem mostra o processo do algoritimo de remoção:
 
 ![Imagem4](/Lista_enc/Remover_how.png)
+
+## Fila Sequencial
+### Algoritimo
+  Funciona principalmente como uma lista sequencial circular, onde obedece as regras do FIFO (first in, first out)
   
+#### A imagem mostra o processo do algoritimo de remoção e insreção:
+
+![Imagem4](/Fila_enc/How.png)
+
 ### Compile and Run
 Requires [make](https://www.gnu.org/software/make/)
 Inside the path
