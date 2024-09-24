@@ -44,7 +44,7 @@
 
 ![Imagem5](/Fila_enc/How.png)
 
-### Compile and Run
+### Compilar e rodar
 Requires [make](https://www.gnu.org/software/make/)
 Inside the path
 ```console
@@ -72,3 +72,27 @@ foo@bar:~$ make run
 #### Estrutura de um grafo implementada por lista de adjacência:
 
 ![Imagem8](/Grafos/imgs/Graph_lst.png)
+
+### Compilar e rodar
+Requires [make](https://www.gnu.org/software/make/)
+Inside the path
+```console
+foo@bar:~$ make
+```
+Limpe os arquivos desnecessários
+```console
+foo@bar:~$ make clean
+```
+Exemplos
+```console
+foo@bar:~$ make run1
+```
+```console
+foo@bar:~$ make run2
+```
+```console
+foo@bar:~$ make run3
+```
+```console
+foo@bar:~$ make run4
+```
