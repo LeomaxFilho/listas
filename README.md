@@ -6,9 +6,9 @@
 
 * [Lista Encadeada](https://github.com/LeomaxFilho/listas?tab=readme-ov-file#lista-encadeada)
   
-* [Fila Encadeada]([https://github.com/LeomaxFilho/listas#fila-sequencial](https://github.com/LeomaxFilho/listas#grafos))
+* [Fila Encadeada](https://github.com/LeomaxFilho/listas#fila-sequencial)
 
-* [Grafos]()
+* [Grafos](https://github.com/LeomaxFilho/listas#grafos)
 </details>
 
 
