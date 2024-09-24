@@ -1,4 +1,4 @@
-#include "grafo.cc"
+#include "grafo.hh"
 
 int main(int argc, char const *argv[])
 {
