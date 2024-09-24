@@ -6,7 +6,7 @@
 
 * [Lista Encadeada](https://github.com/LeomaxFilho/listas?tab=readme-ov-file#lista-encadeada)
   
-* [Fila Encadeada](https://github.com/LeomaxFilho/listas#fila-sequencial)
+* [Fila Encadeada]([https://github.com/LeomaxFilho/listas#fila-sequencial](https://github.com/LeomaxFilho/listas#grafos))
 
 * [Grafos]()
 </details>
@@ -63,12 +63,12 @@ foo@bar:~$ make run
 
 #### Estrutura de um grafo:
 
-![Imagem6](/Grafos/src/Graph.png)
+![Imagem6](/Grafos/imgs/Graph.png)
 
 #### Estrutura de um grafo implementada por matriz de adjacência:
 
-![Imagem7](/Grafos/src/Graph_mtx.png)
+![Imagem7](/Grafos/imgs/Graph_mtx.png)
 
 #### Estrutura de um grafo implementada por lista de adjacência:
 
-![Imagem8](/Grafos/src/Graph_lst.png)
+![Imagem8](/Grafos/imgs/Graph_lst.png)
