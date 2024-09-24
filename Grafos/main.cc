@@ -21,6 +21,5 @@ int main(int argc, char const *argv[])
     graph.dfs(2);
     graph.bfs(2);
 
-    file.close();
     return 0;
 }

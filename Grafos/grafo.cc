@@ -1,14 +1,17 @@
 #include <iostream>
 #include <vector>
+#include <list>
 #include <fstream>
 #include <queue>
+#include <utility>
 
 typedef int inteiro;
 
 class grafo
 {
 private:
-    int** adj_matrix; // * é uma matriz de adjacencia implementada dinamicamente // vector<pair<int, int>> adj_matrix ?
+    int** adj_matrix; // * é uma matriz de adjacencia implementada dinamicamente
+    std::vector<std::list<std::pair<int, int>>> adj_list; // * um vetor de listas encadeadas, formando uma lista de adjacencia
     int num_vertices;
     void dfs_visto(int v, bool visto[]);
 public:
@@ -18,14 +21,14 @@ public:
     void from_file(std::string file_name); // * le arquivos a partir de um arquivo
     void to_string_matrix();
     void to_string_list();
-    void dfs(int start); // * busca em profundidade
-    void bfs(int start); // * busca em largura
+    void dfs(int inicio); // * busca em profundidade
+    void bfs(int inicio); // * busca em largura
 };
 
 grafo::grafo(int num)
 {
     num_vertices = num; // * cria um grafo com o numero de vertices especificados;
-
+    adj_list.resize(num_vertices);
     adj_matrix = new int*[num_vertices];
 
     for (int i = 0; i < num_vertices; i++)
@@ -34,6 +37,7 @@ grafo::grafo(int num)
 
         for (int j = 0; j < num_vertices; j++){
             adj_matrix[i][j] = 0;   // * coloca todos os indices da matriz como 0
+            adj_list[i].push_back(std::make_pair(j, 0));
         }
     }
 }
@@ -50,6 +54,9 @@ grafo::~grafo()
 void grafo::add_node(int i, int j, int val){
 
     adj_matrix[i][j] = val;
+    adj_list[i].push_back(std::make_pair(j, val));
+
+    // adj_list[j].push_back(std::make_pair(i, val)); //  * adiciona a ambos os indices da matriz, mas no caso em especifico a matriz ja e adicionada da maneira devida
     // adj_matrix[j][i] = val; //  * adiciona a ambos os indices da matriz, mas no caso em especifico a matriz ja e adicionada da maneira devida
 }
 
@@ -92,11 +99,11 @@ void grafo::to_string_list(){
     for (int i = 0; i < num_vertices; i++)
     {
         printf("%d ", i);
-        for (int j = 0; j < num_vertices; j++)
+        for (const auto& j : adj_list[i])
         {
-            if (adj_matrix[i][j] > 0)
+            if (j.first > 0)
             {
-                printf("-> (%d, %d) ", j, adj_matrix[i][j]);
+                printf("-> (%d, %d) ", j.first, j.second);
             }
         }
         printf("\n");
@@ -129,7 +136,7 @@ void grafo::dfs(int inicio) {
     delete[] visto;
 }
 
-void grafo::bfs(int start) {
+void grafo::bfs(int inicio) {
     bool* visto = new bool[num_vertices];
 
     for (int i = 0; i < num_vertices; i++) {
@@ -138,8 +145,8 @@ void grafo::bfs(int start) {
 
     std::queue<int> fila;
 
-    visto[start] = true;
-    fila.push(start);
+    visto[inicio] = true;
+    fila.push(inicio);
     int a = 0;
     while (!fila.empty()) {
         int v = fila.front();
@@ -159,6 +166,6 @@ void grafo::bfs(int start) {
             }
         }
     }
-
+    printf("\n");
     delete[] visto;
 }
