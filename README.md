@@ -63,7 +63,7 @@ foo@bar:~$ make run
 
 #### Estrutura de um grafo:
 
-![Imagem6](/Grafos/imgs/Graph.png)
+![Imagem6](/Grafos/imgs/Graph_str.png)
 
 #### Estrutura de um grafo implementada por matriz de adjacência:
 
