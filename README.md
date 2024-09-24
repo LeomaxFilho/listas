@@ -7,6 +7,8 @@
 * [Lista Encadeada](https://github.com/LeomaxFilho/listas?tab=readme-ov-file#lista-encadeada)
   
 * [Fila Encadeada](https://github.com/LeomaxFilho/listas#fila-sequencial)
+
+* [Grafos]()
 </details>
 
 
@@ -40,7 +42,7 @@
   
 #### A imagem mostra o processo do algoritimo de remoção e insreção:
 
-![Imagem4](/Fila_enc/How.png)
+![Imagem5](/Fila_enc/How.png)
 
 ### Compile and Run
 Requires [make](https://www.gnu.org/software/make/)
@@ -56,3 +58,17 @@ Exemplos
 ```console
 foo@bar:~$ make run
 ```
+## Grafos
+  Um grafo, em termos simples, é uma maneira de representar conexões entre coisas. Imagine, por exemplo, uma rede de amigos: cada pessoa é um nó e a amizade entre elas é uma aresta. Se duas pessoas são amigas, há uma aresta conectando os dois nós.
+
+#### Estrutura de um grafo:
+
+![Imagem6](/Grafos/src/Graph.png)
+
+#### Estrutura de um grafo implementada por matriz de adjacência:
+
+![Imagem7](/Grafos/src/Graph_mtx.png)
+
+#### Estrutura de um grafo implementada por lista de adjacência:
+
+![Imagem8](/Grafos/src/Graph_lst.png)
